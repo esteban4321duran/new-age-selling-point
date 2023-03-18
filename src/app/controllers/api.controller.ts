@@ -1,5 +1,5 @@
 import {ApiInfo, ApiServer, Context, controller, Get, Hook, HttpResponseOK, Options, UseSessions} from '@foal/core';
-import {AuthController, TestController} from './api';
+import {AuthController, SalesController} from './api';
 import {User} from '../entities';
 import {OpenapiController} from './openapi.controller';
 
@@ -24,7 +24,7 @@ export class ApiController {
   subControllers = [
     controller('/auth', AuthController),
     controller('/swagger', OpenapiController),
-    controller('/test', TestController)
+    controller('/sales', SalesController),
   ];
 
   @Options('*')

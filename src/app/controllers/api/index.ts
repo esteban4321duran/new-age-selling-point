@@ -1,2 +1,2 @@
 export {AuthController} from './auth.controller';
-export { TestController } from './test.controller';
+export { SalesController } from './sales.controller';
